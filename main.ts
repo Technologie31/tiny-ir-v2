@@ -71,7 +71,7 @@ makerbit.onIrButton(IrButton.BEEP, IrButtonAction.Pressed, function () {
     basic.pause(400)
 })
 makerbit.onIrButton(IrButton.TRight, IrButtonAction.Pressed, function () {
-    Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Right, vitesse)
+    Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_SpinRight, vitesse)
     basic.pause(100)
     Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
 })
