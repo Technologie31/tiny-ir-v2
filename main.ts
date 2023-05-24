@@ -13,7 +13,10 @@ makerbit.onIrButton(IrButton.TLeft, IrButtonAction.Pressed, function () {
     Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.Light, IrButtonAction.Pressed, function () {
-    basic.showIcon(IconNames.Butterfly)
+    basic.showIcon(IconNames.SmallHeart)
+    basic.pause(100)
+    basic.showIcon(IconNames.Heart)
+    basic.pause(100)
 })
 makerbit.onIrButton(IrButton.NUM9, IrButtonAction.Pressed, function () {
     Tinybit.RGB_Car_Big2(100, 100, 0)
@@ -54,10 +57,7 @@ makerbit.onIrButton(IrButton.NUM5, IrButtonAction.Pressed, function () {
     Tinybit.RGB_Car_Big(Tinybit.enColor.Cyan)
 })
 makerbit.onIrButton(IrButton.Power, IrButtonAction.Pressed, function () {
-    basic.showIcon(IconNames.SmallHeart)
-    basic.pause(100)
-    basic.showIcon(IconNames.Heart)
-    basic.pause(100)
+    Tinybit.RGB_Car_Big(Tinybit.enColor.OFF)
 })
 makerbit.onIrButton(IrButton.NUM1, IrButtonAction.Pressed, function () {
     Tinybit.RGB_Car_Big(Tinybit.enColor.Red)
