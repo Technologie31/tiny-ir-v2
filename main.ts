@@ -9,7 +9,8 @@ makerbit.onIrButton(IrButton.NUM3, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.TLeft, IrButtonAction.Pressed, function () {
     Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_SpinLeft, vitesse)
-    basic.pause(100)
+})
+makerbit.onIrButton(IrButton.Any, IrButtonAction.Released, function () {
     Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.Light, IrButtonAction.Pressed, function () {
@@ -26,21 +27,15 @@ makerbit.onIrButton(IrButton.NUM7, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.Right, IrButtonAction.Pressed, function () {
     Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Right, vitesse)
-    basic.pause(100)
-    Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.Left, IrButtonAction.Pressed, function () {
     Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Left, vitesse)
-    basic.pause(100)
-    Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.Minus, IrButtonAction.Pressed, function () {
     vitesse += -10
 })
 makerbit.onIrButton(IrButton.Down, IrButtonAction.Pressed, function () {
     Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Back, vitesse)
-    basic.pause(100)
-    Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.NUM4, IrButtonAction.Pressed, function () {
     Tinybit.RGB_Car_Big(Tinybit.enColor.White)
@@ -50,8 +45,6 @@ makerbit.onIrButton(IrButton.NUM2, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.Up, IrButtonAction.Pressed, function () {
     Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, vitesse)
-    basic.pause(100)
-    Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.NUM5, IrButtonAction.Pressed, function () {
     Tinybit.RGB_Car_Big(Tinybit.enColor.Cyan)
@@ -72,8 +65,6 @@ makerbit.onIrButton(IrButton.BEEP, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.TRight, IrButtonAction.Pressed, function () {
     Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_SpinRight, vitesse)
-    basic.pause(100)
-    Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.Plus, IrButtonAction.Pressed, function () {
     vitesse += 10
